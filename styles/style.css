@@ -134,6 +134,7 @@
     background-size: cover;
     border-radius: 16px;
     padding: 106px 0;
+    margin-bottom: 100px;
 }
 
 .banner-title {
@@ -178,6 +179,9 @@
     padding: 16px 34px;
     border: none;
     border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
 }
 
 /* ************************************
@@ -295,6 +299,9 @@
     }
 
     /* navbar */
+    .navbar {
+        padding: 20px 0;
+    }
 
     /* logo styles */
     .logo-img {
@@ -309,6 +316,27 @@
     }
     .hamburger-icon {
         display: block;
+    }
+
+    /* banner styles */
+    .banner-area {
+        padding: 32px 0;
+        margin-bottom: 0;
+    }
+    .banner-title {
+        font-size: 22px;
+    }
+    .banner-description {
+        font-size: 14px;
+        padding: 16px;
+        line-height: 21px;
+    }
+    .explore-input-area {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .find-now-btn {
+        margin-right: 22px;
     }
 
     /* Our Popular tour */
@@ -367,6 +395,31 @@
         font-size: 2rem;
     }
 
+    /* banner styles */
+    .banner-area {
+        padding: 32px 0;
+        margin-bottom: 0;
+    }
+    .banner-title {
+        font-size: 22px;
+    }
+    .banner-description {
+        font-size: 14px;
+        padding: 16px;
+        line-height: 21px;
+    }
+    .explore-input-area {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .find-now-btn {
+        width: 202px;
+        margin: 0 auto;
+        padding-right: 10px;
+        position: relative;
+        right: 10px;
+    }
+
     /* Our Popular tour */
      .our-popular-tour-area {
         flex-direction: column;
@@ -395,6 +448,14 @@
 @media screen and (min-width: 993px) and (max-width: 1200px) {
     #header-area {
         padding: 0 20px;
+    }
+
+    /* banner styles */
+    .banner-area {
+        padding: 32px 0;
+    }
+    .explore-input-area {
+        margin: 0 40px;
     }
     /* Our Popular tour */
     .our-popular-tour-area {
