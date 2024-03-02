@@ -14,8 +14,9 @@
  :root {
     --primary-color: #ff5400;
     --secondary-color: #131313;
-    --primary-section-color: rgba(19, 19, 24, 0.70);
-    --secondary-section-color: #5A5A5D;
+    --primary-text-color: rgba(19, 19, 24, 0.70);
+    --secondary-text-color: #5A5A5D;
+    --text-white: #fff;
     --primary-font-size: 1rem;
     --primary-font-family: "Mulish", sans-serif;
     --secondary-font-family: "Inter", sans-serif;
@@ -37,14 +38,14 @@
     line-height: 1.625rem;
 }
 .description-text-color {
-    color: var(--primary-section-color);
+    color: var(--primary-text-color);
 }
 .description-color {
-    color: var(--secondary-section-color);
+    color: var(--secondary-text-color);
 }
 .primary-btn {
     border: none;
-    color: #fff;
+    color: var(--text-white);
     font-family: var(--primary-font-family);
     font-size: 1.25rem;
     font-weight: var(--primary-font-weight);
@@ -125,6 +126,59 @@
     font-size: 1.5rem;
 }
 
+/* banner area styles */
+.banner-area {
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(../images/banner-img.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 16px;
+    padding: 106px 0;
+}
+
+.banner-title {
+    color: var(--text-white);
+    font-size: 4rem;
+    font-weight: var(--primary-font-weight);
+}
+.banner-description {
+    color: var(--text-white);
+    padding: 24px 247px;
+}
+.explore-input-area {
+    display: flex;
+    justify-content: center;
+    margin-left: 162px;
+    margin-right: 144px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 1rem;
+}
+.input-field-area {
+    margin-right: 24px;
+}
+.input-field-area > input[type="text"] {
+    color: rgba(19, 19, 24, 0.50);
+    border: none;
+    padding: 16px;
+    border-radius: 8px;
+}
+.input-field-area > i {
+    color: rgb(19, 19, 19, .7);
+    margin-left: -30px;
+}
+.extra-margin {
+    display: inline-block;
+    margin-right: 34px;
+}
+.find-now-btn {
+    color: var(--text-white);
+    font-weight: 700;
+    background: var(--primary-color);
+    padding: 16px 34px;
+    border: none;
+    border-radius: 8px;
+}
 
 /* ************************************
         Main Section styles
