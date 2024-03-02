@@ -149,6 +149,7 @@
     #header-area {
         padding: 0 20px;
     }
+
     /* navbar */
     .menu-bar {
         display: none;
@@ -156,14 +157,21 @@
     .hamburger-icon {
         display: block;
     }
+
+    /* Our Popular tour */
+    .our-popular-tour-area {
+        flex-direction: column;
+        padding: 20px;
+        gap: 24px;
+    }
  }
 
  /**************************************
         Media Query for Medium Devices
  ***************************************/
- @media screen and (min-width: 600px) and (max-width: 992px) {
+ @media screen and (min-width: 601px) and (max-width: 992px) {
     #header-area {
-        padding: 0 40px;
+        padding: 0 20px;
     }
     .menu-bar {
         display: none;
@@ -174,13 +182,26 @@
     .hamburger-icon > i {
         font-size: 2rem;
     }
+
+    /* Our Popular tour */
+     .our-popular-tour-area {
+        flex-direction: column;
+        padding: 20px;
+        gap: 24px;
+    }
  }
 
  /**************************************
         Media Query for Large Device
  ***************************************/
-@media screen and (min-width: 992px) and (max-width: 1200px) {
+@media screen and (min-width: 993px) and (max-width: 1200px) {
     #header-area {
-        padding: 0 40px;
+        padding: 0 20px;
+    }
+    /* Our Popular tour */
+    .our-popular-tour-area {
+        flex-direction: column;
+        padding: 20px;
+        gap: 24px;
     }
 }
