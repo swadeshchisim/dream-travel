@@ -200,7 +200,6 @@
     }
     /* Our Popular tour */
     .our-popular-tour-area {
-        flex-direction: column;
         padding: 20px;
         gap: 24px;
     }
