@@ -79,3 +79,55 @@
  .menu-bar > li > a:hover {
     color: var(--primary-color);
  }
+
+ /* hamburger icon*/
+ .hamburger-icon {
+    display: none;
+ }
+.hamburger-icon > i {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+}
+
+ /**************************************
+        Media Query for Small Devices
+ ***************************************/
+ @media screen and (max-width: 600px) {
+    #header-area {
+        padding: 0 20px;
+    }
+    /* navbar */
+    .menu-bar {
+        display: none;
+    }
+    .hamburger-icon {
+        display: block;
+    }
+ }
+
+ /**************************************
+        Media Query for Medium Devices
+ ***************************************/
+ @media screen and (min-width: 600px) and (max-width: 992px) {
+    #header-area {
+        padding: 0 40px;
+    }
+    .menu-bar {
+        display: none;
+    }
+    .hamburger-icon {
+        display: block;
+    }
+    .hamburger-icon > i {
+        font-size: 32px;
+    }
+ }
+
+ /**************************************
+        Media Query for Large Device
+ ***************************************/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    #header-area {
+        padding: 0 40px;
+    }
+}
