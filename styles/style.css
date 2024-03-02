@@ -154,6 +154,10 @@
  .why-choose-us-area {
     padding: 100px 0;
 }
+.why-choose-us-area > .section-description {
+    max-width: 643px;
+    margin: 0 auto;
+}
 .row {
     display: flex;
     gap: 1.5rem;
@@ -259,6 +263,18 @@
         gap: 24px;
     }
 
+    /* why choose use styles */
+    .why-choose-us-area {
+        padding: 4px 20px;
+    }
+    .row {
+        flex-direction: column;
+        margin-top: 24px;
+    }
+    .single-column {
+        width: 100%;
+    }
+
     /* footer styles */
     .horizontal-line {
         margin: 1.5rem 0;
@@ -304,6 +320,11 @@
         gap: 1.5rem;
     }
 
+    /* why choose us styles */
+    .why-choose-us-area {
+        padding: 4px 20px;
+    }
+
     /* footer styles */
     .horizontal-line {
         margin: 1.5rem auto;
@@ -325,6 +346,12 @@
         padding: 20px;
         gap: 24px;
     }
+
+     /* why choose us styles */
+     .why-choose-us-area {
+        padding: 4px 20px;
+    }
+
     /* footer styles */
     #footer-area {
         padding: 20px;
