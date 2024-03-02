@@ -11,4 +11,41 @@
     padding: 0;
 }
 
-/*  */
+ :root {
+    --primary-color: #ff5400;
+    --secondary-color: #131313;
+    --primary-font-family: "Mulish", sans-serif;
+    --secondary-font-family: "Inter", sans-serif;
+    --primary-font-weight: 800;
+}
+
+ /* ***************************
+        Header styles
+ **************************** */
+
+
+ /* nav style */
+
+ /* logo styles */
+ .logo-area {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+ }
+
+ .logo-img {
+    width: 48px;
+    height: 56px;
+ }
+
+ .logo-text {
+    font-size: 2.25rem;
+    font-weight: var(--primary-font-weight);
+ }
+ .dark-text-color {
+    color: var(--secondary-color);
+ }
+ 
+ .primary-text-color{
+    color: var(--primary-color);
+ }
