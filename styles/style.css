@@ -32,12 +32,10 @@
     align-items: center;
     gap: 1rem;
  }
-
  .logo-img {
     width: 48px;
     height: 56px;
  }
-
  .logo-text {
     font-size: 2.25rem;
     font-weight: var(--primary-font-weight);
@@ -45,7 +43,27 @@
  .dark-text-color {
     color: var(--secondary-color);
  }
- 
  .primary-text-color{
+    color: var(--primary-color);
+ }
+
+ /* menu styles */
+ .menu-bar {
+    display: flex;
+    gap: 2.75rem;
+ }
+ .menu-bar > li {
+    list-style: none;
+ }
+ #active-link {
+     color: var(--primary-color);
+     font-weight: var(--primary-font-weight);
+  }
+ .menu-bar > li > a {
+    color: #424242;
+    font-size: 1.125rem;
+    text-decoration: none;
+ }
+ .menu-bar > li > a:hover {
     color: var(--primary-color);
  }
