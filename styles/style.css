@@ -32,9 +32,11 @@
     margin-bottom: 1.5rem;
 }
 .section-description {
-    color: var(--primary-section-color);
     font-size: var(--primary-font-size);
     line-height: 1.625rem;
+}
+.description-text-color {
+    color: var(--secondary-color);
 }
 .primary-btn {
     border: none;
@@ -69,6 +71,7 @@
  /* logo styles */
  .logo-area {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
  }
@@ -80,7 +83,7 @@
     font-size: 2.25rem;
     font-weight: var(--primary-font-weight);
  }
- .dark-text-color {
+ .dark-text {
     color: var(--secondary-color);
  }
  .primary-text-color{
@@ -142,6 +145,40 @@
     margin-bottom: 1rem;
 }
 
+/* footer styles */
+#footer-area {
+    display: flex;
+    justify-content: center;
+    padding: 110px 0;
+}
+.footer-content {
+    font-family: var(--primary-font-family);
+}
+   
+.footer-content > .section-description {
+    color: #5A5A5D;
+    margin-top: 15px;
+    margin-bottom: 2rem;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.social-icon > i {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.horizontal-line {
+    border: 1px solid rgba(19, 19, 24, 0.10);
+    max-width: 872px;
+    margin: 50px auto;
+}
+.copyright {
+    font-family: var(--secondary-font-family);
+}
  /**************************************
         Media Query for Small Devices
  ***************************************/
@@ -151,6 +188,15 @@
     }
 
     /* navbar */
+
+    /* logo styles */
+    .logo-img {
+        width: 1.795rem;
+        height: 2.095rem;
+    }
+    .logo-text {
+        font-size: 1.346rem;
+    }
     .menu-bar {
         display: none;
     }
@@ -164,6 +210,14 @@
         padding: 20px;
         gap: 24px;
     }
+
+    /* footer styles */
+    .horizontal-line {
+        margin: 1.5rem 0;
+    }
+    #footer-area {
+        padding: 20px;
+    }
  }
 
  /**************************************
@@ -173,6 +227,17 @@
     #header-area {
         padding: 0 20px;
     }
+
+    /* logo styles */
+    .logo-img {
+        width: 1.795rem;
+        height: 2.095rem;
+    }
+    .logo-text {
+        font-size: 1.346rem;
+    }
+
+    /* menu styles */
     .menu-bar {
         display: none;
     }
@@ -186,8 +251,17 @@
     /* Our Popular tour */
      .our-popular-tour-area {
         flex-direction: column;
+        align-items: center;
         padding: 20px;
         gap: 24px;
+    }
+
+    /* footer styles */
+    .horizontal-line {
+        margin: 1.5rem auto;
+    }
+    #footer-area {
+        padding: 34px 20px;
     }
  }
 
@@ -202,5 +276,12 @@
     .our-popular-tour-area {
         padding: 20px;
         gap: 24px;
+    }
+    /* footer styles */
+    #footer-area {
+        padding: 20px;
+    }
+    .horizontal-line {
+        margin: 1.5rem auto;
     }
 }
