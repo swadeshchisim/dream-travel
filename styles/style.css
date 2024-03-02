@@ -15,6 +15,7 @@
     --primary-color: #ff5400;
     --secondary-color: #131313;
     --primary-section-color: rgba(19, 19, 24, 0.70);
+    --secondary-section-color: #5A5A5D;
     --primary-font-size: 1rem;
     --primary-font-family: "Mulish", sans-serif;
     --secondary-font-family: "Inter", sans-serif;
@@ -36,11 +37,15 @@
     line-height: 1.625rem;
 }
 .description-text-color {
-    color: var(--secondary-color);
+    color: var(--primary-section-color);
+}
+.description-color {
+    color: var(--secondary-section-color);
 }
 .primary-btn {
     border: none;
     color: #fff;
+    font-family: var(--primary-font-family);
     font-size: 1.25rem;
     font-weight: var(--primary-font-weight);
     padding: 14px 34px;
@@ -145,6 +150,49 @@
     margin-bottom: 1rem;
 }
 
+ /* Why choose  us styles */
+ .why-choose-us-area {
+    padding: 100px 0;
+}
+.row {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 48px;
+}
+.half-column {
+    padding: 2rem;
+    border-radius: 16px;
+}
+.half-column > img {
+    width: 64px;
+    height: 64px;
+}
+.half-column > .section-description {
+    color: #5A5A5D;
+}
+.column-title {
+    font-size: 1.5rem;
+    font-weight: var(--primary-font-weight);
+}
+.first-column {
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+.second-column {
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+.single-column-container{
+    display: flex;
+    justify-content: center;
+}
+.single-column {
+    width: 573px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    margin-top: 1.5rem;
+}
+
 /* footer styles */
 #footer-area {
     display: flex;
@@ -156,7 +204,7 @@
 }
    
 .footer-content > .section-description {
-    color: #5A5A5D;
+    color: #5a5a5d;
     margin-top: 15px;
     margin-bottom: 2rem;
 }
@@ -252,8 +300,8 @@
      .our-popular-tour-area {
         flex-direction: column;
         align-items: center;
-        padding: 20px;
-        gap: 24px;
+        padding: 1.25rem;
+        gap: 1.5rem;
     }
 
     /* footer styles */
