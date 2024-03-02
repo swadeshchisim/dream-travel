@@ -14,6 +14,8 @@
  :root {
     --primary-color: #ff5400;
     --secondary-color: #131313;
+    --primary-section-color: rgba(19, 19, 24, 0.70);
+    --primary-font-size: 1rem;
     --primary-font-family: "Mulish", sans-serif;
     --secondary-font-family: "Inter", sans-serif;
     --primary-font-weight: 800;
@@ -23,12 +25,38 @@
     width: 1170px;
 }
 
+.section-title {
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    font-weight: var(--primary-font-weight);
+    margin-bottom: 1.5rem;
+}
+.section-description {
+    color: var(--primary-section-color);
+    font-size: var(--primary-font-size);
+    line-height: 1.625rem;
+}
+.primary-btn {
+    border: none;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: var(--primary-font-weight);
+    padding: 14px 34px;
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    display: inline-block;
+    margin-top: 32px;
+}
+.text-center {
+    text-align: center;
+}
  /* ***************************
         Header styles
  **************************** */
 #header-area {
     display: flex;
     justify-content: center;
+    font-family: var(--primary-font-family);
 }
 
  /* nav style */
@@ -95,6 +123,23 @@
 #main-section {
     display: flex;
     justify-content: center;
+    font-family: var(--primary-font-family);
+}
+
+
+/* Our Popular tour styles */
+.our-popular-tour-area {
+    display: flex;
+    gap: 3.25rem;
+}
+.our-popular-tour-text {
+    max-width: 577px;
+}
+.our-popular-tour-list {
+    padding: 1.5rem;
+}
+.our-popular-tour-list > li:nth-child(-n+2) {
+    margin-bottom: 1rem;
 }
 
  /**************************************
@@ -127,7 +172,7 @@
         display: block;
     }
     .hamburger-icon > i {
-        font-size: 32px;
+        font-size: 2rem;
     }
  }
 
