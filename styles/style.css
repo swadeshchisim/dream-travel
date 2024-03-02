@@ -19,13 +19,25 @@
     --primary-font-weight: 800;
 }
 
+.container {
+    width: 1170px;
+}
+
  /* ***************************
         Header styles
  **************************** */
-
+#header-area {
+    display: flex;
+    justify-content: center;
+}
 
  /* nav style */
-
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 53px 0 50px;
+}
  /* logo styles */
  .logo-area {
     display: flex;
