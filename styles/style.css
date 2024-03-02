@@ -89,6 +89,14 @@
     font-size: 1.5rem;
 }
 
+/* ************************************
+        Main Section styles
+************************************* */
+#main-section {
+    display: flex;
+    justify-content: center;
+}
+
  /**************************************
         Media Query for Small Devices
  ***************************************/
