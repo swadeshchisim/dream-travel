@@ -222,9 +222,14 @@
 .destinations {
     padding-top: 24px;
 }
-
 .destination-container {
     display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+.destination-three-column {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin-bottom: 24px;
 }
@@ -234,7 +239,9 @@
     width: 573px;
     height: 300px;
     border-radius: 16px;
-    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../images/maldives.png), lightgray 50% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../images/maldives.png), lightgray 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
 }
 
@@ -402,6 +409,13 @@
         Media Query for Small Devices
  ***************************************/
  @media screen and (max-width: 600px) {
+
+    /* global styles */
+    .section-title, .column-title {
+        font-size: 20px;
+    }
+
+    /* header styles */
     #header-area {
         padding: 0 20px;
     }
@@ -450,17 +464,47 @@
     /* Our Popular tour */
     .our-popular-tour-area {
         flex-direction: column;
+        align-items: center;
         padding: 20px;
         gap: 24px;
     }
 
+    /* choose your destination styles */
+    .choose-your-destination-area {
+        padding: 0 20px;
+    }
+    .choose-your-destination-area > .section-title {
+        margin-bottom: 0;
+    }
+    .destination-description {
+        padding: 16px 0;
+    }
+    .destinations {
+        padding-top: 0;
+    }
+    .destination-container {
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 16px;
+    }
+    .destination-container > div, .destination-three-column > div {
+        width: 100%;
+    }
+    .destination-three-column {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
     /* why choose use styles */
     .why-choose-us-area {
-        padding: 4px 20px;
+        padding: 0 20px;
     }
     .row {
         flex-direction: column;
         margin-top: 24px;
+    }
+    .column-title {
+        padding: 16px 0;
     }
     .single-column {
         width: 100%;
@@ -518,6 +562,7 @@
     }
     .explore-input-area {
         flex-direction: column;
+        align-items: center;
         gap: 24px;
     }
     .find-now-btn {
@@ -531,9 +576,37 @@
     /* Our Popular tour */
      .our-popular-tour-area {
         flex-direction: column;
-        align-items: center;
         padding: 1.25rem;
         gap: 1.5rem;
+    }
+    .our-popular-img > img {
+        width: 100%;
+    }
+
+    /* choose your destination styles */
+    .choose-your-destination-area {
+        padding: 0 20px;
+    }
+    .choose-your-destination-area > .section-title {
+        margin-bottom: 0;
+    }
+    .destination-description {
+        padding: 16px 0;
+    }
+    .destinations {
+        padding-top: 0;
+    }
+    .destination-container {
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 16px;
+    }
+    .destination-container > div, .destination-three-column > div {
+        width: 100%;
+    }
+    .destination-three-column {
+        grid-template-columns: 1fr;
+        gap: 16px;
     }
 
     /* why choose us styles */
@@ -569,6 +642,34 @@
     .our-popular-tour-area {
         padding: 20px;
         gap: 24px;
+    }
+
+    /* choose your destination styles */
+    .choose-your-destination-area {
+        padding: 0 20px;
+    }
+    .choose-your-destination-area > .section-title {
+        margin-bottom: 0;
+    }
+    .destination-description {
+        padding: 16px 0;
+    }
+    .destinations {
+        padding-top: 0;
+    }
+    .destination-container {
+        /* flex-direction: column; */
+        gap: 16px;
+        margin-bottom: 16px;
+    }
+    .destination-container > div, .destination-three-column > div {
+        width: 100%;
+    }
+
+    .destination-three-column {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 16px;
     }
 
      /* why choose us styles */
