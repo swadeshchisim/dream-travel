@@ -640,28 +640,15 @@
     }
     /* Our Popular tour */
     .our-popular-tour-area {
-        padding: 20px;
-        gap: 24px;
+        padding: 0 20px;
     }
 
     /* choose your destination styles */
     .choose-your-destination-area {
-        padding: 0 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
-    .choose-your-destination-area > .section-title {
-        margin-bottom: 0;
-    }
-    .destination-description {
-        padding: 16px 0;
-    }
-    .destinations {
-        padding-top: 0;
-    }
-    .destination-container {
-        /* flex-direction: column; */
-        gap: 16px;
-        margin-bottom: 16px;
-    }
+    
     .destination-container > div, .destination-three-column > div {
         width: 100%;
     }
@@ -669,12 +656,12 @@
     .destination-three-column {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
-        gap: 16px;
     }
 
      /* why choose us styles */
      .why-choose-us-area {
-        padding: 4px 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     /* footer styles */
