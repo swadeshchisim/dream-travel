@@ -372,6 +372,10 @@
 }
 
 /* Newsletter Styles */
+.newsletter-area {
+    display: flex;
+    gap: 24px;
+}
 .newsletter-text {
     width: 474px;
     border: 1px solid var(--primary-color);
@@ -389,6 +393,35 @@
     margin-bottom: 16px;
     border-radius: 8px;
     background: rgba(19, 19, 24, 0.05);
+}
+.newsletter-horizontal-line {
+    border: 1px solid rgba(19, 19, 24, 0.10);
+    margin-bottom: 24px;
+}
+.newsletter-btn {
+    width: 82%;
+}
+
+.newsletter-img {
+    position: relative;
+}
+.discount-tag {
+    color: var(--text-white);
+    background: var(--primary-color);
+    padding: 35px 56px;
+    border-radius: 16px;
+    transform: rotate(-25deg);
+    position: absolute;
+    right: 10px;
+    bottom: 84px;
+}
+.discount-tag > a {
+    color: var(--text-white);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.discount-title {
+    font-size: 2rem;
 }
 
 
