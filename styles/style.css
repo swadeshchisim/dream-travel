@@ -371,6 +371,28 @@
     margin-top: 1.5rem;
 }
 
+/* Newsletter Styles */
+.newsletter-text {
+    width: 474px;
+    border: 1px solid var(--primary-color);
+    padding: 40px;
+    border-radius: 16px;
+}
+.newsletter-text > .section-description {
+    padding: 16px 0 24px;
+}
+.newsletter-text > input[type="text"] {
+    border: none;
+    color: rgba(19, 19, 24, 0.30);
+    padding: 16px 20px;
+    width: 90%;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+
+
 /* footer styles */
 #footer-area {
     display: flex;
