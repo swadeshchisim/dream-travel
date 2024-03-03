@@ -371,6 +371,30 @@
     margin-top: 1.5rem;
 }
 
+/****************************************************
+            What client Says Styles 
+ ****************************************************/
+ .what-client-says-area > .section-description {
+    width: 700px;
+    margin: 0 auto;
+ }
+
+ /* client feedback */
+ .client-feedback-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 48px 0;
+ }
+ .client-feedback img {
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 16px;
+ }
+ .designation {
+    margin-top: 8px;
+ }
+
 /* Newsletter Styles */
 .newsletter-area {
     display: flex;
